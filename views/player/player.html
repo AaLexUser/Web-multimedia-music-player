@@ -1,0 +1,49 @@
+<section class="player">
+  <div class="details">
+    <div class="now-playing">PLAYING x OF y</div>
+    <div class="art-shadow">
+      <div class="track-art" data-cover=""></div>
+    </div>
+    <div class="track-name">Track Name</div>
+    <div class="track-artist">Track Artist</div>
+  </div>
+
+  <div class="slider_container">
+    <div class="time">
+      <div class="current-time">00:00</div>
+      <input type="range" min="0" max="100" value="0" class="seek_slider">
+      <div class="total-duration">00:00</div>
+    </div>
+  </div>
+
+  <div class="buttons">
+
+    <div class="prev-track" id="prev-track">
+      <div id="step-backward-icon">
+        <div class="bar"></div>
+        <div class="triangle"></div>
+      </div>
+    </div>
+
+    <div class="playpause-track" id="playpause-track">
+      <div id="playpause-icon"></div>
+    </div>
+
+    <div class="next-track" id="next-track">
+      <div id="step-forward-icon">
+        <div class="bar"></div>
+        <div class="triangle"></div>
+      </div>
+    </div>
+  </div>
+  <audio id="current-track" type="audio/mp3"></audio>
+  <div class="wave">
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+    <span class="stroke"></span>
+  </div>
+</section>

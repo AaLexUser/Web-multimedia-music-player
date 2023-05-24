@@ -1,0 +1,223 @@
+.player{
+  padding: 20px;
+}
+.details{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.art-shadow {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border: 2px solid #FFFA;
+  border-radius: 50%;
+  -moz-box-shadow: 0px 6px 5px black;
+  -webkit-box-shadow: 0px 6px 5px black;
+  border-radius: 190px;
+}
+
+.track-art {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.now-playing{
+  font-size: 1rem;
+}
+.track-name{
+  font-size: 2.5rem;
+}
+.track-artist{
+  margin-top: 5px;
+  font-size: 1.5rem;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.active{
+  color: black;
+}
+.playpause-track,
+.prev-track,
+.next-track{
+  padding: 20px;
+  opacity: 0.8;
+  transition: opacity .2s;
+}
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.playpause-track{
+  margin: 0 20px;
+}
+.prev-track{
+  margin-right: 20px;
+}
+.next-track{
+  margin-left: 20px;
+}
+
+/* Progress Bar */
+.slider_container{
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seek_slider{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: #83A9FF;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.seek_slider::-webkit-slider-thumb{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 3px solid #3774FF;
+  cursor: grab;
+  border-radius: 100%;
+}
+
+.seek_slider::hover{
+  opacity: 1.0;
+}
+
+.seek_slider{
+  width: 100%;
+}
+
+.current-time,
+.total-duration{
+  padding: 10px;
+}
+
+#playpause-icon {
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+}
+#playpause-icon.paused {
+  border-style: double;
+  border-width: 0px 0 0px 60px;
+}
+#playpause-icon:hover {
+  border-color: transparent transparent transparent #404040;
+}
+
+/* Step-Forward Icon */
+
+#step-forward-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+#step-forward-icon .bar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 40px;
+  background-color: #333;
+}
+
+#step-forward-icon .triangle {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-color: transparent transparent transparent #202020;
+  border-style: solid;
+  border-width: 24px 0px 24px 30px;
+}
+
+/* Step-Backward Icon */
+
+#step-backward-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+#step-backward-icon .bar {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 40px;
+  background-color: #202020;
+}
+
+#step-backward-icon .triangle {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-color: transparent #202020 transparent transparent;
+  border-style: solid;
+  border-width: 24px 30px 24px 0px;
+}
+
+.rotate-animation {
+  animation: rotate 20s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.loader .stroke{
+    background: #fb2e2e;
+    height: 150%;
+    width: 10px;
+    border-radius: 50px;
+    margin: 0 5px;
+}
